@@ -147,12 +147,12 @@ $originalPOS = [System.Windows.Forms.Cursor]::Position.X
 $o=New-Object -ComObject WScript.Shell
 
     while (1) {
-        $pauseTime = 3
+        $pauseTime = 1
         if ([Windows.Forms.Cursor]::Position.X -ne $originalPOS){
             break
         }
         else {
-            $o.SendKeys("{CAPSLOCK}");Start-Sleep -Seconds $pauseTime
+            Start-Sleep -Seconds $pauseTime
         }
     }
 }
@@ -168,10 +168,6 @@ function Play-WAV{
 $PlayWav=New-Object System.Media.SoundPlayer;$PlayWav.SoundLocation="$env:TMP\s.wav";$PlayWav.playsync()
 }
 
-#----------------------------------------------------------------------------------------------------
-
-# This turns the volume up to max level
-$k=[Math]::Ceiling(100/2);$o=New-Object -ComObject WScript.Shell;for($i = 0;$i -lt $k;$i++){$o.SendKeys([char] 175)}
 
 #----------------------------------------------------------------------------------------------------
 
