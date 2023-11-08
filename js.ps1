@@ -36,11 +36,11 @@ $image =  "https://github.com/Direcka/R/raw/main/js.png?raw=true"
 $i = -join($image,"?dl=1")
 iwr $i -O $env:TMP\i.png
 
-iwr https://github.com/Direcka/R/blob/97601991f70f0466f24d1920165162a542796ca4/js.png?dl=1 -O $env:TMP\i.png
+iwr https://github.com/Direcka/R/raw/main/js.png?raw=true?dl=1 -O $env:TMP\i.png
 
 # Download WAV file; replace link to $wav to add your own sound
 
-$wav = "https://github.com/Direcka/R/raw/main/scr.wav?raw=true?raw=true"
+$wav = "https://github.com/Direcka/R/raw/main/scr.wav?raw=true"
 
 $w = -join($wav,"?dl=1")
 iwr $w -O $env:TMP\s.wav
