@@ -40,12 +40,13 @@ iwr https://github.com/Direcka/R/raw/main/js.png?raw=true?dl=1 -O $env:TMP\i.png
 
 # Download WAV file; replace link to $wav to add your own sound
 
-$wav = "https://github.com/Direcka/R/raw/main/scr.wav?raw=true"
+
+
+
+$wav = "https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/OMG/Payloads/OMG-JumpScare/female_scream.wav?raw=true"
 
 $w = -join($wav,"?dl=1")
 iwr $w -O $env:TMP\s.wav
-iwr "https://jakoby.lol/hak5" -EA 0 >$null
-
 
 #----------------------------------------------------------------------------------------------------
 
