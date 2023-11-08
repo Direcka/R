@@ -31,7 +31,7 @@
 
 # Download Image; replace link to $image to add your own image
 
-$image =  "https://github.com/I-Am-Jakoby/hak5-submissions/raw/main/OMG/Payloads/OMG-JumpScare/jumpscare.png"
+$image =  "https://github.com/Direcka/R/blob/97601991f70f0466f24d1920165162a542796ca4/js.png"
 
 $i = -join($image,"?dl=1")
 iwr $i -O $env:TMP\i.png
